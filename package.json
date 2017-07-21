@@ -1,0 +1,8 @@
+{
+  "name": "randomized-counter",
+  "version": "0.0.1",
+  "dependencies": {
+    "@types/jquery": "^3.2.9",
+    "jquery": "^3.2.1"
+  }
+}
