@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Randomized number counter</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../dist/main.js"></script>
+    <style>
+
+        #myRandomSyncedCounter {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -25px;
+            font-size: 52px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="myRandomSyncedCounter"></div>
+
+    <script>
+        var config = {
+            'jsonFileLocation': 'counterData.json',
+            'counterElementId': 'myRandomSyncedCounter',
+            'updateInterval': 1000,
+            'updateChance': 40
+        };
+        (new RandomizedCounter(config)).run();
+    </script>
+</body>
+</html>
