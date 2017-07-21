@@ -1,0 +1,27 @@
+{
+  "name": "randomized-counter",
+  "description": "Randomized number counter",
+  "keywords": [
+	"counter",
+	"random",
+	"number"
+  ],
+  "homepage": "https://github.com/alexberce/randomized-counter",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Alexandru Berce",
+	  "email": "alex@invobox.com",
+	  "homepage": "https://github.com/alexberce"
+	}
+  ],
+  "autoload": {
+	"psr-4": {
+	  "Invobox\\RandomizedCounter\\": "src/php/"
+	}
+  },
+  "scripts": {
+	"start": "php -S 0.0.0.0:8080 -t / example/counter-data-updater.php",
+	"test": "phpunit"
+  }
+}
