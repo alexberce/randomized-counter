@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "target": "es5",
+    "sourceMap": false,
+    "outFile": "./../../dist/main.js",
+    "removeComments": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "main.ts"
+  ]
+}
